@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <name>Zenoss Core Utilities</name>
     <properties>
-        <powermock.version>1.4.9</powermock.version>
+        <powermock.version>1.6.6</powermock.version>
     </properties>
     <build>
         <plugins>
@@ -128,5 +128,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+        <id>bintray-sergevs42-zenoss-ce</id>
+        <name>sergevs42-zenoss-ce</name>
+        <url>https://api.bintray.com/maven/sergevs42/zenoss-ce/zenoss-utils/;publish=1</url>
+        </repository>
+    </distributionManagement>
+
 </project>
 
